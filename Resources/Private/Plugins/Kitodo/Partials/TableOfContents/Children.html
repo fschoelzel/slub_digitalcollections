@@ -48,6 +48,7 @@
                 argumentsToBeExcludedFromQueryString="{0: 'tx_dlf[measure]'}"
                 addQueryString="1"
                 addQueryStringMethod="GET"
+                section="{child.section}"
                 title="{f:if(condition:'{child.title}', then: '{child.title}', else: '{child.type}')}">
                     <f:render partial="TableOfContents/Title" arguments="{child: child}"/>
             </f:link.action>
