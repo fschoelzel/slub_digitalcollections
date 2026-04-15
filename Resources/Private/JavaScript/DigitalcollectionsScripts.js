@@ -89,13 +89,13 @@ $(function () {
     }
 
     // Copy selected page number to mobile meta (in order to transform select field to ui button)
-    if ($('.pages select option[selected]')[0]) {
-        $('dl.mobile-meta').append('<dt class="mobile-page-number">No.</dt><dd class="mobile-page-number">' + $('.pages select option[selected]').text() + '</dd>');
+    if ($('.tx-dlf-navigation-pages select option[selected]')[0]) {
+        $('dl.mobile-meta').append('<dt class="mobile-page-number">No.</dt><dd class="mobile-page-number">' + $('.tx-dlf-navigation-pages select option[selected]').text() + '</dd>');
     }
 
     // Copy some controls for mobile (page select, fullscreen)
     $('.provider').append('<div class="mobile-controls" />');
-    $('.view-functions .pages form, .view-functions .tx-dlf-tools-fullscreen a, .tx-dlf-toolbox-searchindocument-search-toggle').clone().appendTo('.provider .mobile-controls');
+    $('.view-functions .tx-dlf-navigation-pages form, .view-functions .tx-dlf-tools-fullscreen, .tx-dlf-toolbox-searchindocument-search-toggle').clone().appendTo('.provider .mobile-controls');
 
     // Shorten mobile meta title
     shortenMobileMetaElement = $('.provider dl.mobile-meta dd.tx-dlf-title a');
